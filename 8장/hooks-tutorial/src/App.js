@@ -1,11 +1,10 @@
 import React from "react";
+// import Counter from "./Counter";
 import Info from "./Info";
-function App() {
-  return (
-    <div>
-      <Info />
-    </div>
-  );
-}
+// import Average from "./Average";
+
+const App = () => {
+  return <Info />;
+};
 
 export default App;
