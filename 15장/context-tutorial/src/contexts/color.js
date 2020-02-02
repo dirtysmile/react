@@ -2,7 +2,7 @@ import React, { createContext, useState } from "react";
 
 const ColorContext = createContext({
   state: { color: "black", subcolor: "red" },
-  action: {
+  actions: {
     setColor: () => {},
     setSubcolor: () => {}
   }
@@ -21,8 +21,10 @@ const ColorProvider = ({ children }) => {
   );
 };
 
+// const ColorConsumer = ColorContext.Consumer와 같은 의미
 const { Consumer: ColorConsumer } = ColorContext;
 
+// ColorProvider와 ColorConsumer 내보내기
 export { ColorProvider, ColorConsumer };
 
 export default ColorContext;
